@@ -1,0 +1,34 @@
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 100%);
+  grid-gap: 0px;
+  grid-template-areas: "intro" "main" "sidebar";
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center; }
+
+.intro {
+  grid-area: intro;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 100%);
+  grid-gap: 0px;
+  grid-template-areas: "summary" "banner" "preamble"; }
+
+.banner {
+  grid-area: banner; }
+
+.summary {
+  grid-area: summary; }
+
+.preamble {
+  grid-area: preamble; }
+
+.main {
+  grid-area: main; }
+
+.sidebar {
+  grid-area: sidebar; }
+
+/*# sourceMappingURL=style.css.map */
