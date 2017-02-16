@@ -1,3 +1,4 @@
+/* line 1, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .page-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -8,6 +9,7 @@
   margin-right: 30%;
   text-align: center; }
 
+/* line 12, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .intro {
   grid-area: intro;
   display: grid;
@@ -16,18 +18,23 @@
   grid-gap: 0px;
   grid-template-areas: "summary" "banner" "preamble"; }
 
+/* line 20, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .banner {
   grid-area: banner; }
 
+/* line 23, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .summary {
   grid-area: summary; }
 
+/* line 26, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .preamble {
   grid-area: preamble; }
 
+/* line 32, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .main {
   grid-area: main; }
 
+/* line 35, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .sidebar {
   grid-area: sidebar; }
 
