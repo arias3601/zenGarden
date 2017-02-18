@@ -3,6 +3,7 @@ $right: 30%;
 $small: 320px;
 $large: 1024px;
 
+
 @mixin pretext() {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -47,8 +48,6 @@ $large: 1024px;
             grid-area: preamble
         }
 
-
-
      .main {
       grid-area: main;
     }
@@ -61,11 +60,24 @@ $large: 1024px;
             grid-template-rows: repeat(1, 100%);
             grid-gap: 0px;
             grid-template-areas: "design-selection design-archives zen-resources";
-            
-            
-        }
+            ul {
+                list-style-type: none;
+            }
+        } 
             .design-selection {
                 grid-area: design-selection;
+            }
+            .design-selection ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1, 100%);
+                grid-template-areas: "li1 li2";
+                    &:nth-child(even){
+                        grid-area: li1;
+                    }
+                    &:nth-child(odd){
+                        grid-area: li2;
+                    }
             }
             .design-archives {
                 grid-area: design-archives;
@@ -78,6 +90,12 @@ $large: 1024px;
     .page-wrapper {
      margin-left: $left / 3 ;
      margin-right: $right / 3;   
+    }
+    .wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 100%);
+            grid-gap: 0px;
+            grid-template-areas: "design-selection" "design-archives" "zen-resources";
     }
 }
 

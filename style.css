@@ -1,3 +1,4 @@
+/* line 28, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .page-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -8,6 +9,7 @@
   margin-right: 30%;
   text-align: center; }
 
+/* line 36, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .intro {
   grid-area: intro;
   display: grid;
@@ -16,40 +18,72 @@
   grid-gap: 0px;
   grid-template-areas: "summary" "banner" "preamble"; }
 
+/* line 41, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .banner {
   grid-area: banner; }
 
+/* line 44, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .summary {
   grid-area: summary; }
 
+/* line 47, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .preamble {
   grid-area: preamble; }
 
+/* line 51, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .main {
   grid-area: main; }
 
+/* line 54, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .sidebar {
   grid-area: sidebar; }
 
+/* line 57, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 100%);
   grid-gap: 0px;
   grid-template-areas: "design-selection design-archives zen-resources"; }
+  /* line 63, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
+  .wrapper ul {
+    list-style-type: none; }
 
+/* line 67, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .design-selection {
   grid-area: design-selection; }
 
+/* line 70, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
+.design-selection ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 100%);
+  grid-template-areas: "li1 li2"; }
+  /* line 75, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
+  .design-selection ul:nth-child(even) {
+    grid-area: li1; }
+  /* line 78, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
+  .design-selection ul:nth-child(odd) {
+    grid-area: li2; }
+
+/* line 82, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .design-archives {
   grid-area: design-archives; }
 
+/* line 85, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
 .zen-resources {
   grid-area: zen-resources; }
 
 @media screen and (max-width: 768px) {
+  /* line 90, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
   .page-wrapper {
     margin-left: 10%;
-    margin-right: 10%; } }
+    margin-right: 10%; }
+  /* line 94, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/style.scss */
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 100%);
+    grid-gap: 0px;
+    grid-template-areas: "design-selection" "design-archives" "zen-resources"; } }
 
 /*# sourceMappingURL=style.css.map */
