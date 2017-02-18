@@ -28,10 +28,24 @@
 .main {
   grid-area: main; }
 
+.sidebar {
+  grid-area: sidebar; }
+
 .wrapper {
-  display: flex; }
-  .wrapper ul {
-    list-style-type: none; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 100%);
+  grid-gap: 0px;
+  grid-template-areas: "design-selection design-archives zen-resources"; }
+
+.design-selection {
+  grid-area: design-selection; }
+
+.design-archives {
+  grid-area: design-archives; }
+
+.zen-resources {
+  grid-area: zen-resources; }
 
 @media screen and (max-width: 768px) {
   .page-wrapper {
