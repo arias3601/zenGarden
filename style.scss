@@ -1,7 +1,6 @@
 $left: 30%;
 $right: 30%;
-$small: 320px;
-$large: 1024px;
+
 
 
 @mixin pretext() {
@@ -10,19 +9,6 @@ $large: 1024px;
     grid-template-rows: repeat(3, 100%);
     grid-gap: 0px;
 }
-
-//experimenting if statements in sass, i'll come back to it
-//@mixin breakpoint($media) {
-//    @if $media == handhelds {
-//        @media only screen and (max-width: $small) {background: red;}
-//    }
-//    @else if $media == medium-screens {
-//        @media only screen and (min-width: $small + 1) and (max-width: $large - 1)
-//    }
-//    @else if $media == wide-screens {
-//        @media only screen and (min-width: $large) {@content;}
-//    }
-//}
 
 
 .page-wrapper {
@@ -70,15 +56,8 @@ $large: 1024px;
             .design-selection ul {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(1, 100%);
-                grid-template-areas: "li1 li2";
-                    &:nth-child(even){
-                        grid-area: li1;
-                    }
-                    &:nth-child(odd){
-                        grid-area: li2;
-                    }
-            }
+                }
+
             .design-archives {
                 grid-area: design-archives;
             }
