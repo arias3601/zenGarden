@@ -1,3 +1,44 @@
+.preamble::before {
+  content: "Darth Duewhile has found "; }
+
+.preamble h3::after {
+  content: "..."; }
+.preamble p:nth-child(2)::after {
+  content: " Not to mention all of the dead programers, who once stood in his path."; }
+.preamble p:nth-child(3)::after {
+  content: " However, only master Yoda has achived pure enlightment and the young programer must seek him out. This is the only way Dearth Duewhile will be stopped."; }
+.preamble p:nth-child(4)::after {
+  content: " And the web with me."; }
+
+.explanation p:nth-child(2) abbr:nth-child(1)::after {
+  content: ". If we do not Darth Duewhile will quickly take over the loops"; }
+.explanation p:nth-child(2)::after {
+  content: " Dearth Duewhile has still not found this power, and so we must protect it at all cost."; }
+.explanation p:nth-child(3)::after {
+  content: " However, the same can be said of those on the dark side of the loop. They are able to create ugliness and disorder to the web"; }
+
+.participation p:nth-child(2)::after {
+  content: " This will be necessary if you wish to help defeat Dearth Duewhile."; }
+.participation p:nth-child(3) abbr:nth-child(1)::after {
+  content: ". This is so Dearth Duewhile does not have access to it"; }
+.participation p:nth-child(4)::after {
+  content: " The more we have the quicker we can defeat Dearth Duewhile."; }
+
+.benefits p:nth-child(2)::after {
+  content: " And of course, to defeat Dearth Duewhile and save the galaxy from his grasp."; }
+
+.requirements p:nth-child(2)::after {
+  content: " Which will be done by H5-C3 and J3P0."; }
+.requirements p:nth-child(3)::after {
+  content: " And where Dearth Duewhile has his gretest control."; }
+.requirements::after {
+  content: "May the loops be with you!"; }
+
+.preamble h3 {
+  font-size: 1em;
+  font-weight: normal;
+  display: inline; }
+
 .page-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
