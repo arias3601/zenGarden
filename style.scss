@@ -2,30 +2,28 @@
 @import 'partials/before-after';
 @import 'partials/fonts-colors';
 @import 'partials/layout';
-@import 'partials/mixins.scss';
 
 
-$left: 15%;
-$right: 15%;
+$left: 30%;
+$right: 30%;
+
+
+
+@mixin pretext() {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 100%);
+    grid-gap: 0px;
+}
+
 
 .page-wrapper {
     @include pretext();
     grid-template-areas: "intro" "main" "sidebar";
     margin-left: $left;
     margin-right: $right;
-    position:absolute;
-    font-size: 200%;
-    font-weight: bold;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow: hidden;
-    transform-origin:50% 100%;
-    transform:perspective(300px) rotateX(15deg);
-    animation: scroll 10s linear 4s forwards;
+    text-align: center;
 }
-
 
     .intro {
         grid-area: intro;
@@ -57,7 +55,7 @@ $right: 15%;
             ul {
                 list-style-type: none;
             }
-        }
+        } 
             .design-selection {
                 grid-area: design-selection;
             }
@@ -73,19 +71,10 @@ $right: 15%;
                 grid-area: zen-resources;
             }
 
-// ----------keyframes-----------------------
-
-  @keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -1000%; }
-  }
-
-// ----------media queries-------------------
-
 @media screen and (max-width:768px) {
     .page-wrapper {
      margin-left: $left / 3 ;
-     margin-right: $right / 3;
+     margin-right: $right / 3;   
     }
     .wrapper {
             grid-template-columns: repeat(1, 1fr);
@@ -94,3 +83,4 @@ $right: 15%;
             grid-template-areas: "design-selection" "design-archives" "zen-resources";
     }
 }
+

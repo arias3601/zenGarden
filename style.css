@@ -62,7 +62,7 @@ body {
   display: inline; }
 
 p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requirements {
-  color: #ffff00; }
+  color: yellow; }
 
 .page-wrapper {
   display: grid;
@@ -70,19 +70,9 @@ p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requireme
   grid-template-rows: repeat(3, 100%);
   grid-gap: 0px;
   grid-template-areas: "intro" "main" "sidebar";
-  margin-left: 15%;
-  margin-right: 15%;
-  position: absolute;
-  font-size: 200%;
-  font-weight: bold;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  transform-origin: 50% 100%;
-  transform: perspective(300px) rotateX(15deg);
-  animation: scroll 10s linear 4s forwards; }
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center; }
 
 .intro {
   grid-area: intro;
@@ -129,15 +119,10 @@ p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requireme
 .zen-resources {
   grid-area: zen-resources; }
 
-@keyframes scroll {
-  0% {
-    top: 100%; }
-  100% {
-    top: -1000%; } }
 @media screen and (max-width: 768px) {
   .page-wrapper {
-    margin-left: 5%;
-    margin-right: 5%; }
+    margin-left: 10%;
+    margin-right: 10%; }
 
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
