@@ -1,0 +1,18 @@
+// all mixins
+
+@mixin circle() {
+  position: relative;
+  width: 400px;
+	height: 400px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	border-radius: 200px;
+  z-index: 1;
+}
+
+@mixin pretext() {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 100%);
+    grid-gap: 0px;
+}
