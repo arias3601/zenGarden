@@ -1,5 +1,16 @@
+// colors for deathstar -- lighter to darker
+$deathgray-1: #a9aaab;
+$deathgray-2: #808080;
+$deathgray-3: #696969;
+$deathgray-4: #3b3b3b;
+$death-bk: #212121;
+
+
 .preamble h3 {
 font-size: 1em;
 font-weight: normal;
 display: inline;
+}
+p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requirements {
+    color: #ffff00;
 }

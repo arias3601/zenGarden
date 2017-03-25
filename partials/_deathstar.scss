@@ -1,34 +1,27 @@
-@mixin circle() {
-  position: relative;
-  width: 400px;
-	height: 400px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	border-radius: 200px;
-  z-index: 1;
-}
+@import 'fonts-colors.scss';
+@import 'mixins.scss';
 
 .deathstar {
   @include circle;
-  background: linear-gradient(to right, #808080, #696969);
+  background: linear-gradient(to right, $deathgray-2, $deathgray-3);
 
    &:after {
    content:'';
    position: absolute;
-   background: #a9aaab;
+   background: $deathgray-1;
    border-radius: 50%;
    height: 135px;
    width: 135px;
    top: 10%;
    left: 45%;
    z-index: 1;
-   background: linear-gradient(to right, #696969, #3b3b3b)
+   background: linear-gradient(to right, $deathgray-3, $deathgray-4)
 }
 
   &:before {
   content: '';
   position: absolute;
-  background: #212121;
+  background: $death-bk;
   top:50%;
   width: 100%;
   height: 5px;
