@@ -56,19 +56,44 @@ body {
 .requirements::after {
   content: "May the loops be with you!"; }
 
+header {
+  padding-top: 200px;
+  padding-bottom: 200px; }
+
+h3 {
+  padding-top: 150px;
+  padding-bottom: 50px; }
+
+@font-face {
+  font-family: StarFont;
+  src: url(fonts/DeathStar.otf); }
+@font-face {
+  font-family: StarTitle;
+  src: url(fonts/Starjout.ttf); }
 .preamble h3 {
   font-size: 1em;
   font-weight: normal;
   display: inline; }
 
 p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requirements {
-  color: #ffff00; }
+  color: #ffff00;
+  font-size: 100%; }
+
+p, a, .preamble, .explanation, .participation, .benefits, .requirements {
+  font-family: "StarFont";
+  letter-spacing: 3px; }
+
+h1, h2, h3 {
+  font-family: "StarTitle";
+  text-align: center; }
+
+h1 {
+  font-size: 200%; }
+
+h2, h3 {
+  font-size: 150%; }
 
 .page-wrapper {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 100%);
-  grid-gap: 0px;
   grid-template-areas: "intro" "main" "sidebar";
   margin-left: 15%;
   margin-right: 15%;
@@ -82,7 +107,8 @@ p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requireme
   overflow: hidden;
   transform-origin: 50% 100%;
   transform: perspective(300px) rotateX(15deg);
-  animation: scroll 10s linear 4s forwards; }
+  animation: scroll 120s linear 0s forwards;
+  text-align: justify; }
 
 .intro {
   grid-area: intro;
@@ -133,7 +159,7 @@ p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requireme
   0% {
     top: 100%; }
   100% {
-    top: -1000%; } }
+    top: -2000%; } }
 @media screen and (max-width: 768px) {
   .page-wrapper {
     margin-left: 5%;
