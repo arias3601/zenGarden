@@ -1,6 +1,47 @@
+@font-face{
+font-family: StarFont;
+src: url(fonts/DeathStar.otf);
+}
+
+@font-face{
+font-family: StarTitle;
+src: url(fonts/Starjout.ttf);
+}
+// colors for deathstar -- lighter to darker
+$deathgray-1: #a9aaab;
+$deathgray-2: #808080;
+$deathgray-3: #696969;
+$deathgray-4: #3b3b3b;
+$death-bk: #212121;
+
+
+
+
 .preamble h3 {
 font-size: 1em;
 font-weight: normal;
 display: inline;
+}
+
+p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requirements {
+    color: #ffff00;
+     font-size: 100%;
+    
+}
+p, a, .preamble, .explanation, .participation, .benefits, .requirements {
+    font-family: "StarFont";
+    letter-spacing: 3px;
+}
+h1, h2, h3 {
+    font-family: "StarTitle";
+    text-align: center;
+   
+    
+}
+h1 {
+    font-size: 200%;
+}
+h2, h3{
+    font-size: 150%;
 }
 

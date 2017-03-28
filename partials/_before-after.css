@@ -1,0 +1,61 @@
+/* line 1, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.preamble::before {
+  content: "Darth Duewhile has found "; }
+
+/* line 5, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.preamble h3::after {
+  content: "..."; }
+
+/* line 9, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.preamble p:nth-child(2)::after {
+  content: " Not to mention all of the dead programers, who once stood in his path."; }
+
+/* line 15, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.preamble p:nth-child(3)::after {
+  content: " However, only master Yoda has achived pure enlightment and the young programer must seek him out. This is the only way Dearth Duewhile will be stopped."; }
+
+/* line 21, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.preamble p:nth-child(4)::after {
+  content: " And the web with me."; }
+
+/* line 30, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.explanation p:nth-child(2) abbr:nth-child(1)::after {
+  content: ". If we do not Darth Duewhile will quickly take over the loops"; }
+
+/* line 36, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.explanation p:nth-child(2)::after {
+  content: " Dearth Duewhile has still not found this power, and so we must protect it at all cost."; }
+
+/* line 42, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.explanation p:nth-child(3)::after {
+  content: " However, the same can be said of those on the dark side of the loop. They are able to create ugliness and disorder to the web"; }
+
+/* line 50, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.participation p:nth-child(2)::after {
+  content: " This will be necessary if you wish to help defeat Dearth Duewhile."; }
+
+/* line 55, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.participation p:nth-child(3) abbr:nth-child(1)::after {
+  content: ". This is so Dearth Duewhile does not have access to it"; }
+
+/* line 60, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.participation p:nth-child(4)::after {
+  content: " The more we have the quicker we can defeat Dearth Duewhile."; }
+
+/* line 68, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.benefits p:nth-child(2)::after {
+  content: " And of course, to defeat Dearth Duewhile and save the galaxy from his grasp."; }
+
+/* line 76, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.requirements p:nth-child(2)::after {
+  content: " Which will be done by H5-C3 and J3P0."; }
+
+/* line 81, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.requirements p:nth-child(3)::after {
+  content: " And where Dearth Duewhile has his gretest control."; }
+
+/* line 85, C:/Users/Antonio Aldridge/Documents/GitHub/zenGarden/partials/_before-after.scss */
+.requirements::after {
+  content: "May the loops be with you!"; }
+
+/*# sourceMappingURL=_before-after.css.map */
