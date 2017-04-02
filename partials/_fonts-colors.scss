@@ -23,12 +23,15 @@ font-weight: normal;
 display: inline;
 }
 
-p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requirements {
+p, h1, h2, h3, a, li, .preamble, .explanation, .participation, .benefits, .requirements {
     color: #ffff00;
      font-size: 100%;
+    @media screen and (max-width:768px) {
+       font-size: 4vw; 
+    }
     
 }
-p, a, .preamble, .explanation, .participation, .benefits, .requirements {
+p, a, li, .preamble, .explanation, .participation, .benefits, .requirements {
     font-family: "StarFont";
     letter-spacing: 3px;
 }
@@ -40,9 +43,15 @@ h1, h2, h3 {
 }
 h1 {
     font-size: 200%;
+    @media screen and (max-width:768px) {
+        font-size: 9vw;
+    }
 }
 h2, h3{
     font-size: 150%;
+    @media screen and (max-width:768px) {
+        font-size: 6vw;
+    }
 }
 .summary p, .summary a {
     color: blue;

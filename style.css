@@ -56,21 +56,6 @@ body {
 .requirements::after {
   content: "May the loops be with you!"; }
 
-/*
-@keyframes textcrawl {
-  0% {top: -100px; transform: rotateX(20deg) translateZ(0); }
-  100% {top: -6000px; transform: rotateX(25deg) translateZ(-2500px);}
-}
-*/
-header {
-  padding-top: 1700px;
-  padding-bottom: 500px;
-  transform: rotateX(0deg) translateZ(0); }
-
-h3 {
-  padding-top: 150px;
-  padding-bottom: 50px; }
-
 @font-face {
   font-family: StarFont;
   src: url(fonts/DeathStar.otf); }
@@ -82,11 +67,14 @@ h3 {
   font-weight: normal;
   display: inline; }
 
-p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requirements {
+p, h1, h2, h3, a, li, .preamble, .explanation, .participation, .benefits, .requirements {
   color: #ffff00;
   font-size: 100%; }
+  @media screen and (max-width: 768px) {
+    p, h1, h2, h3, a, li, .preamble, .explanation, .participation, .benefits, .requirements {
+      font-size: 4vw; } }
 
-p, a, .preamble, .explanation, .participation, .benefits, .requirements {
+p, a, li, .preamble, .explanation, .participation, .benefits, .requirements {
   font-family: "StarFont";
   letter-spacing: 3px; }
 
@@ -96,12 +84,27 @@ h1, h2, h3 {
 
 h1 {
   font-size: 200%; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 9vw; } }
 
 h2, h3 {
   font-size: 150%; }
+  @media screen and (max-width: 768px) {
+    h2, h3 {
+      font-size: 6vw; } }
 
 .summary p, .summary a {
   color: blue; }
+
+header {
+  padding-top: 1700px;
+  padding-bottom: 500px;
+  transform: rotateX(0deg) translateZ(0); }
+
+h3 {
+  padding-top: 150px;
+  padding-bottom: 50px; }
 
 .page-wrapper {
   grid-template-areas: "intro" "main" "sidebar";
@@ -114,9 +117,11 @@ h2, h3 {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: hidden;
   animation: scroll 120s linear 0s forwards;
   text-align: justify; }
+  @media screen and (min-width: 768px) {
+    .page-wrapper {
+      overflow: hidden; } }
 
 .intro {
   grid-area: intro;
@@ -143,19 +148,18 @@ h2, h3 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 100%);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 100%);
   grid-gap: 0px;
-  grid-template-areas: "design-selection design-archives zen-resources"; }
+  grid-template-areas: "design-selection" "design-archives" "zen-resources"; }
   .wrapper ul {
     list-style-type: none; }
 
 .design-selection {
   grid-area: design-selection; }
 
-.design-selection ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+.design-selection ul li {
+  white-space: pre-line; }
 
 .design-archives {
   grid-area: design-archives; }
@@ -163,50 +167,45 @@ h2, h3 {
 .zen-resources {
   grid-area: zen-resources; }
 
-@keyframes scroll {
-  0% {
-    top: 25%;
-    opacity: 0;
-    transform-origin: 0% 0%;
-    transform: perspective(0px) rotateX(0deg); }
-  2% {
-    top: 25%;
-    opacity: 1;
-    transform-origin: 0% 0%;
-    transform: perspective(0px) rotateX(0deg); }
-  5% {
-    top: 25%;
-    opacity: 1;
-    transform-origin: 0% 0%;
-    transform: perspective(0px) rotateX(0deg); }
-  6% {
-    top: 25%;
-    opacity: 0;
-    transform-origin: 0% 0%;
-    transform: perspective(0px) rotateX(0deg); }
-  6.99% {
-    opacity: 0;
-    top: -200%;
-    transform-origin: 0% 0%;
-    transform: perspective(0px) rotateX(0deg); }
-  7% {
-    opacity: 1;
-    top: -200%;
-    transform-origin: 50% 100%;
-    transform: perspective(300px) rotateX(15deg); }
-  100% {
-    top: -2000%;
-    transform-origin: 50% 100%;
-    transform: perspective(300px) rotateX(15deg); } }
 @media screen and (max-width: 768px) {
   .page-wrapper {
     margin-left: 5%;
-    margin-right: 5%; }
-
-  .wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 100%);
-    grid-gap: 0px;
-    grid-template-areas: "design-selection" "design-archives" "zen-resources"; } }
+    margin-right: 5%; } }
+@media screen and (min-width: 768px) {
+  @keyframes scroll {
+    0% {
+      top: 25%;
+      opacity: 0;
+      transform-origin: 0% 0%;
+      transform: perspective(0px) rotateX(0deg); }
+    2% {
+      top: 25%;
+      opacity: 1;
+      transform-origin: 0% 0%;
+      transform: perspective(0px) rotateX(0deg); }
+    5% {
+      top: 25%;
+      opacity: 1;
+      transform-origin: 0% 0%;
+      transform: perspective(0px) rotateX(0deg); }
+    6% {
+      top: 25%;
+      opacity: 0;
+      transform-origin: 0% 0%;
+      transform: perspective(0px) rotateX(0deg); }
+    6.99% {
+      opacity: 0;
+      top: -200%;
+      transform-origin: 0% 0%;
+      transform: perspective(0px) rotateX(0deg); }
+    7% {
+      opacity: 1;
+      top: -200%;
+      transform-origin: 50% 100%;
+      transform: perspective(300px) rotateX(15deg); }
+    100% {
+      top: -2000%;
+      transform-origin: 50% 100%;
+      transform: perspective(300px) rotateX(15deg); } } }
 
 /*# sourceMappingURL=style.css.map */
