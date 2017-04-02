@@ -17,7 +17,9 @@
 	<script src="script/html5shiv.js"></script>
 	<![endif]-->
 </head>
-
+<audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 9000)">
+  <source src="starwars.mp3" type="audio/mpeg">
+</audio>
 <!--
 
 
@@ -184,6 +186,8 @@
 
 </div>
 
+
+    
 <!--
 
 	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.

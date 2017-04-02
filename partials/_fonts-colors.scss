@@ -24,7 +24,7 @@ display: inline;
 }
 
 p, h1, h2, h3, a, .preamble, .explanation, .participation, .benefits, .requirements {
-     color: #ffff00;
+    color: #ffff00;
      font-size: 100%;
     
 }
@@ -44,9 +44,6 @@ h1 {
 h2, h3{
     font-size: 150%;
 }
-
-nav {
-    color: #ffff00;
-    font-size: 100%;
+.summary p, .summary a {
+    color: blue;
 }
-

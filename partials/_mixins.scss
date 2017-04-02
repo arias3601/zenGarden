@@ -3,11 +3,11 @@
 @mixin circle() {
   position: relative;
   width: 400px;
-  height: 400px;
+	height: 400px;
 	-moz-border-radius: 200px;
 	-webkit-border-radius: 200px;
 	border-radius: 200px;
-  z-index: -1;
+  z-index: 1;
 }
 
 @mixin pretext() {
